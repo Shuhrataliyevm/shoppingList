@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Collapse, Button, Modal, Input, List } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
-import './customText.scss';
+import './CustomText.scss';
 
 const { Panel } = Collapse;
 
