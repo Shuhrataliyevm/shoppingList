@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
-import useGroups  from '../../../hooks/useGroups';
+import useGroups from '../../../hooks/useGroups';
 
 import './header.scss';
 
@@ -10,15 +10,15 @@ function Header() {
     const { groups, groupsLoading, groupsError } = useGroups(group);
 
     console.log(groups);
-    
+
     return (
         <div className="container">
             <div className="main-header">
                 <div className="top-bar">
                     <div className="header-icons">
-                        <img src="/public/icons/blog-solid (1).svg" alt="#" />
+                        <img src="/icons/blog-solid (1).svg" alt="#" />
                         <button className='create-button'>
-                            <img src="/public/icons/+.svg" alt="#" />
+                            <img src="/icons/+.svg" alt="Add Person" />
                             <p>Create</p>
                         </button>
                     </div>
@@ -41,8 +41,8 @@ function Header() {
                                 </div>
                             </div>
                         </div>
-                        { groupsLoading && <p>Loading...</p>}
-                        { groupsError && <p style={{ color: 'red' }}>{groupsError.message}</p>}
+                        {groupsLoading && <p>Loading...</p>}
+                        {groupsError && <p style={{ color: 'red' }}>{groupsError.message}</p>}
                     </form>
                     <div className="action-icons">
                         <img src="/icons/notifict.svg" alt="Notifications" />
