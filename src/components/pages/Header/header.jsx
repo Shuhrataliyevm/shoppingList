@@ -18,7 +18,7 @@ function Header() {
                     <div className="header-icons">
                         <img src="/public/icons/blog-solid (1).svg" alt="#" />
                         <button className='create-button'>
-                            <img src="/public/icons/+.svg" alt="Add Person" />
+                            <img src="/public/icons/+.svg" alt="#" />
                             <p>Create</p>
                         </button>
                     </div>
